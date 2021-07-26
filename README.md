@@ -4,7 +4,12 @@
 - Express routes
 - API route (generic kitties for now)
 - 404 & 500 Error handling
+- webpadk & babel
 
 * Things to check:
 + Body Parser is depreciate - despite having included the "extended: true"
-+ + next steps are webpack, babble and react installation and linking up.
+
+
+Errors ! ! !
+- npm start & npm start-dev do not work. Error in the serverside code: index & apiRoutes.js
+
