@@ -20,7 +20,6 @@ app.use('/api', require('./apiRoutes'));
 // ------------- SPA
 // GOES AFTER ALL ROUTES : Send index.html for any other requests
 app.get('*', function(req, res){
-  console.log('get request 1 !!!!!!')
     res.sendFile(path.join(__dirname, '../public/index.html'))
   });
 
