@@ -12,14 +12,21 @@ module.exports = {
       rules: [
         {
           test: /\.jsx?$/,
-          exclude: /node_modules/,
+          exclude: /(node_modules | bower_componenets)/,
           loader: 'babel-loader',
           options: {
             presets: [
-              '@babel/preset-react'
+              'react', 'es2015'
             ]
           }
+        },
+        {
+          test: /\.css$/,
+          use: [
+            'style-loader',
+            'css-loader',
+          ]
         }
       ]
     }
-  }
+  } 
